@@ -27,8 +27,7 @@ int main(int argc, char *argv[]) {
 		}
 	}
 	if (zcnt > 0) {
-		lseek(of, --zcnt, SEEK_CUR);
-		write(of, "", 1);
+		lseek(of, zcnt, SEEK_CUR);
 	}
 	close(of);
 	return 0;
