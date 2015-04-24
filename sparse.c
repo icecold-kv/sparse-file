@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
 				lseek(of, zcnt, SEEK_CUR);
 				zcnt = 0;
 			}
-			buf[l++];
+			buf[l++] = tmp;
 			if (l > 2048) {
 				write(of, buf, 2048);
 				l = 0;
